@@ -7,16 +7,20 @@ set(header_folder ${PROJECT_SOURCE_DIR}/source/include)
 
 set(sources 
     ${source_folder}/main.cpp
+	${source_folder}/graphics.cpp
+	${source_folder}/gameManager.cpp
 )
 
 set(headers
-
+	${header_folder}/graphics.hpp
+	${header_folder}/gameManager.hpp
 )
 
 set(third_party ${CMAKE_CURRENT_LIST_DIR}/../third_party)
 
 set(include_dirs
     ${third_party}/SDL2/include
+	${header_folder}
 )
 
 set(libraries

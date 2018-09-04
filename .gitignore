@@ -1,2 +1,3 @@
 **/build/**
 deploy-build/rpg-game*
+*.user

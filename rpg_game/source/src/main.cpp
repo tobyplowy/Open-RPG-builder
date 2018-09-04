@@ -1,7 +1,13 @@
+#include "graphics.hpp"
+#include "gameManager.hpp"
+
 #include <iostream>
 
 int main()
 {
-	std::cout << "Hey Guys!" << std::endl;
-	return 0;
+	Graphics* graphicsInstance = new Graphics("Yoyo");
+
+	GameManager* gameManager = new GameManager( graphicsInstance );
+
+	gameManager->run();
 }
